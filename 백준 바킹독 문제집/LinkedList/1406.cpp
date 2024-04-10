@@ -14,6 +14,9 @@ char c, w;
 
 int main()
 {
+	ios::sync_with_stdio(0);
+	cin.tie(0);
+
 	cin >> str;
 	for (const auto& ch : str)
 		editor.emplace_back(ch);
@@ -45,7 +48,7 @@ int main()
 		{
 			if (cursor != editor.begin())
 				cursor = editor.erase(--cursor);
-			// 참고 ( list erase() return value )
+			// 참고 ( list return value )
 			// https://learn.microsoft.com/ko-kr/cpp/standard-library/list-class?view=msvc-170
 
 			continue;

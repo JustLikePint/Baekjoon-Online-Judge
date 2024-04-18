@@ -35,7 +35,7 @@ int main()
 		 result = num[6] / 2 + 1;
 	else result = num[6] / 2;
 
-	num[6] = 0; // 갯수 초기화
+	num[6] = 0; // 개수 초기화
 
 	for (auto& n : num)
 		result = max(result, n);
